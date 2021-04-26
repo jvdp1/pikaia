@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	 
-	 <meta name="description" content="Modern Fortran Edition of the Pikaia Genetic Algorithm">
+   
+   <meta name="description" content="Modern Fortran Edition of the Pikaia Genetic Algorithm">
     
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
@@ -17,6 +17,9 @@
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
     
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,13 +29,6 @@
     
     <script src="../js/jquery-2.1.3.min.js"></script>
     <script src="../js/svg-pan-zoom.min.js"></script>
-
-    
-    <script src="../tipuesearch/tipuesearch_content.js"></script>
-    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    <script src="../tipuesearch/tipuesearch_set.js"></script>
-    <script src="../tipuesearch/tipuesearch.js"></script>
-    
 
   </head>
 
@@ -52,35 +48,37 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-				
+        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
-		 aria-expanded="false">Contents <span class="caret"></span></a>
-	      <ul class="dropdown-menu">
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
               
-            <li><a href="../lists/files.html">Source Files</a></li>
-				
-				
+            <li><a href="../sourcefile/pikaia_module.f90.html">Source File</a></li>
+        
+        
+        
             <li><a href="../lists/modules.html">Modules</a></li>
-				
+        
             
                                 
             <li><a href="../lists/procedures.html">Procedures</a></li>
-				
-				
+        
+        
             <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
-								
+               
             <li><a href="../lists/types.html">Derived Types</a></li>
-				
-				
-            <li><a href="../program/pikaia_test.html">Program</a></li>
-	    
+        
+        
             </ul>
             </li>
 
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../sourcefile/pikaia_module.f90.html">Source File</a></li>
+
 
 
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
@@ -94,8 +92,6 @@
                              
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
 
-
-<li class="visible-xs hidden-sm visible-lg"><a href="../program/pikaia_test.html">Program</a></li>
 
           </ul>
         
@@ -135,19 +131,23 @@
     
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
-	  data-placement="bottom" data-html="true"
-	  title="20.2% of total for procedures.">148 statements</a>
+    data-placement="bottom" data-html="true"
+    title="22.0% of total for procedures.">148 statements</a>
      </li> 
+     
      
      
     <li><i class="fa fa-code"></i><a href="../src/pikaia_module.f90"> Source File</a></li>
      
+     
   </ul>
   <ol class="breadcrumb in-well text-right">
   
+    
      <li><a href='../sourcefile/pikaia_module.f90.html'>pikaia_module.f90</a></li>
-  
+    
      <li><a href='../module/pikaia_module.html'>pikaia_module</a></li>
+    
   
      <li class="active">set_inputs</li>
   </ol>
@@ -167,6 +167,9 @@
     
 <div id="sidebar">
   
+<h3>Contents</h3>
+ 
+
 
 
 
@@ -195,64 +198,8 @@
 </div>
 
 
-  <hr>
-  
 
-<div class="panel panel-default">
-  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#allprocs-0">All Procedures</a></h3></div>
-  <div id="allprocs-0" class="panel-collapse collapse">
-    <div class="list-group">
-      
-      <a class="list-group-item" href="../proc/adjmut.html">adjmut</a>
-      
-      <a class="list-group-item" href="../proc/cross.html">cross</a>
-      
-      <a class="list-group-item" href="../proc/decode.html">decode</a>
-      
-      <a class="list-group-item" href="../proc/encode.html">encode</a>
-      
-      <a class="list-group-item" href="../proc/func_wrapper.html">func_wrapper</a>
-      
-      <a class="list-group-item" href="../proc/genrep.html">genrep</a>
-      
-      <a class="list-group-item" href="../proc/mutate.html">mutate</a>
-      
-      <a class="list-group-item" href="../proc/newpop.html">newpop</a>
-      
-      <a class="list-group-item" href="../proc/pikaia.html">pikaia</a>
-      
-      <a class="list-group-item" href="../proc/report.html">report</a>
-      
-      <a class="list-group-item" href="../proc/report_iteration.html">report_iteration</a>
-      
-      <a class="list-group-item" href="../proc/rninit.html">rninit</a>
-      
-      <a class="list-group-item" href="../proc/rnkpop.html">rnkpop</a>
-      
-      <a class="list-group-item" href="../proc/rosenbrock.html">rosenbrock</a>
-      
-      <a class="list-group-item" href="../proc/rqsort.html">rqsort</a>
-      
-      <a class="list-group-item" href="../proc/select_parents.html">select_parents</a>
-      
-      <a class="list-group-item" href="../proc/set_inputs.html">set_inputs</a>
-      
-      <a class="list-group-item" href="../proc/slowdown.html">slowdown</a>
-      
-      <a class="list-group-item" href="../proc/solve_with_pikaia.html">solve_with_pikaia</a>
-      
-      <a class="list-group-item" href="../proc/stdrep.html">stdrep</a>
-      
-      <a class="list-group-item" href="../proc/twod.html">twod</a>
-      
-      <a class="list-group-item" href="../proc/urand.html">urand</a>
-      
-    </div>
-  </div>
 </div>
-
-
-</div>  
 
     </div>
     
@@ -261,7 +208,7 @@
 private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pcross, pmutmn, pmutmx, pmut, imut, fdif, irep, ielite, ivrb, convergence_tol, convergence_window, initial_guess_frac, iseed)
     
     
-	 
+   
 </h2>
     
   
@@ -294,7 +241,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-me%7E3"></span>class(<a href='../type/pikaia_class.html'>pikaia_class</a>),</td>
+  <td><span class="anchor" id="variable-me~3"></span>class(<a href='../type/pikaia_class.html'>pikaia_class</a>),</td>
   <td>intent(out)</td>
   <td></td>
   
@@ -309,7 +256,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-n%7E2"></span>integer,</td>
+  <td><span class="anchor" id="variable-n~2"></span>integer,</td>
   <td>intent(in)</td>
   <td></td>
   
@@ -325,7 +272,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-xl%7E2"></span>real(kind=wp),</td>
+  <td><span class="anchor" id="variable-xl~2"></span>real(kind=wp),</td>
   <td>intent(in),</td>
   <td></td>
   
@@ -340,7 +287,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-xu%7E2"></span>real(kind=wp),</td>
+  <td><span class="anchor" id="variable-xu~2"></span>real(kind=wp),</td>
   <td>intent(in),</td>
   <td></td>
   
@@ -355,7 +302,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-f%7E3"></span>procedure(<a href='../interface/pikaia_func.html'>pikaia_func</a>)</td>
+  <td><span class="anchor" id="variable-f~3"></span>procedure(<a href='../interface/pikaia_func.html'>pikaia_func</a>)</td>
   <td></td>
   <td></td>
   
@@ -390,7 +337,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-iter_f%7E2"></span>procedure(<a href='../interface/iter_func.html'>iter_func</a>),</td>
+  <td><span class="anchor" id="variable-iter_f~2"></span>procedure(<a href='../interface/iter_func.html'>iter_func</a>),</td>
   <td></td>
   <td>optional</td>
   
@@ -408,7 +355,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-np%7E2"></span>integer,</td>
+  <td><span class="anchor" id="variable-np~2"></span>integer,</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -423,7 +370,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-ngen%7E2"></span>integer,</td>
+  <td><span class="anchor" id="variable-ngen~2"></span>integer,</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -438,7 +385,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-nd%7E2"></span>integer,</td>
+  <td><span class="anchor" id="variable-nd~2"></span>integer,</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -454,7 +401,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-pcross%7E2"></span>real(kind=wp),</td>
+  <td><span class="anchor" id="variable-pcross~2"></span>real(kind=wp),</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -472,7 +419,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-pmutmn%7E2"></span>real(kind=wp),</td>
+  <td><span class="anchor" id="variable-pmutmn~2"></span>real(kind=wp),</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -487,7 +434,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-pmutmx%7E2"></span>real(kind=wp),</td>
+  <td><span class="anchor" id="variable-pmutmx~2"></span>real(kind=wp),</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -502,7 +449,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-pmut%7E2"></span>real(kind=wp),</td>
+  <td><span class="anchor" id="variable-pmut~2"></span>real(kind=wp),</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -520,7 +467,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-imut%7E2"></span>integer,</td>
+  <td><span class="anchor" id="variable-imut~2"></span>integer,</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -541,7 +488,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-fdif%7E2"></span>real(kind=wp),</td>
+  <td><span class="anchor" id="variable-fdif~2"></span>real(kind=wp),</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -557,7 +504,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-irep%7E2"></span>integer,</td>
+  <td><span class="anchor" id="variable-irep~2"></span>integer,</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -574,7 +521,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-ielite%7E2"></span>integer,</td>
+  <td><span class="anchor" id="variable-ielite~2"></span>integer,</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -590,7 +537,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-ivrb%7E2"></span>integer,</td>
+  <td><span class="anchor" id="variable-ivrb~2"></span>integer,</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -606,7 +553,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-convergence_tol%7E2"></span>real(kind=wp),</td>
+  <td><span class="anchor" id="variable-convergence_tol~2"></span>real(kind=wp),</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -621,7 +568,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-convergence_window%7E2"></span>integer,</td>
+  <td><span class="anchor" id="variable-convergence_window~2"></span>integer,</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -639,7 +586,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-initial_guess_frac%7E2"></span>real(kind=wp),</td>
+  <td><span class="anchor" id="variable-initial_guess_frac~2"></span>real(kind=wp),</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -656,7 +603,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
   
 <tr>
   
-  <td><span class="anchor" id="variable-iseed%7E2"></span>integer,</td>
+  <td><span class="anchor" id="variable-iseed~2"></span>integer,</td>
   <td>intent(in),</td>
   <td>optional</td>
   
@@ -671,11 +618,15 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
     
     
     
+    
      
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
       
+<h3>Contents</h3>
+ 
+
 
 
 
@@ -702,6 +653,7 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
     <a class="list-group-item" href="../proc/set_inputs.html#src">set_inputs</a>
   </div>
 </div>
+
 
 
     </section>
@@ -897,44 +849,44 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
 <span class="k">        write</span><span class="p">(</span><span class="n">output_unit</span><span class="p">,</span><span class="s1">&#39;(A)&#39;</span><span class="p">)</span> <span class="s1">&#39; ERROR: illegal value for Convergence tolerance.&#39;</span>
         <span class="n">status</span> <span class="o">=</span> <span class="mi">101</span>
     <span class="k">end if</span>
-
+<span class="k"> </span>
 <span class="k">    if</span> <span class="p">(</span><span class="n">me</span><span class="p">%</span><span class="n">convergence_window</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">)</span> <span class="k">then</span>
 <span class="k">        write</span><span class="p">(</span><span class="n">output_unit</span><span class="p">,</span><span class="s1">&#39;(A)&#39;</span><span class="p">)</span> <span class="s1">&#39; ERROR: illegal value for Convergence window.&#39;</span>
         <span class="n">status</span> <span class="o">=</span> <span class="mi">102</span>
     <span class="k">end if</span>
-
+<span class="k"> </span>
 <span class="k">    if</span> <span class="p">(</span><span class="n">me</span><span class="p">%</span><span class="n">iseed</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">)</span> <span class="k">then</span>
 <span class="k">        write</span><span class="p">(</span><span class="n">output_unit</span><span class="p">,</span><span class="s1">&#39;(A)&#39;</span><span class="p">)</span> <span class="s1">&#39; ERROR: illegal value for iseed.&#39;</span>
         <span class="n">status</span> <span class="o">=</span> <span class="mi">103</span>
     <span class="k">end if</span>
-
+<span class="k"> </span>
 <span class="k">    if</span> <span class="p">(</span><span class="n">me</span><span class="p">%</span><span class="n">nd</span><span class="o">&gt;</span><span class="mi">9</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">me</span><span class="p">%</span><span class="n">nd</span><span class="o">&lt;</span><span class="mi">1</span><span class="p">)</span> <span class="k">then</span>
 <span class="k">        write</span><span class="p">(</span><span class="n">output_unit</span><span class="p">,</span><span class="s1">&#39;(A)&#39;</span><span class="p">)</span> <span class="s1">&#39; ERROR: illegal value for Chromosome length.&#39;</span>
         <span class="n">status</span> <span class="o">=</span> <span class="mi">104</span>
     <span class="k">end if</span>
-
+<span class="k"> </span>
 <span class="k">    if</span> <span class="p">(</span><span class="nb">mod</span><span class="p">(</span><span class="n">me</span><span class="p">%</span><span class="n">np</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span> <span class="k">then</span>
 <span class="k">       write</span><span class="p">(</span><span class="n">output_unit</span><span class="p">,</span><span class="s1">&#39;(A)&#39;</span><span class="p">)</span> <span class="s1">&#39; ERROR: population size must be an even number.&#39;</span>
        <span class="n">status</span> <span class="o">=</span> <span class="mi">105</span>
     <span class="k">end if</span>
-
+<span class="k"> </span>
 <span class="k">    if</span> <span class="p">(</span><span class="n">me</span><span class="p">%</span><span class="n">initial_guess_frac</span><span class="o">&lt;</span><span class="mf">0.0_wp</span> <span class="p">.</span><span class="nb">or</span><span class="p">.</span> <span class="n">me</span><span class="p">%</span><span class="n">initial_guess_frac</span><span class="o">&gt;</span><span class="mf">1.0_wp</span><span class="p">)</span> <span class="k">then</span>
 <span class="k">       write</span><span class="p">(</span><span class="n">output_unit</span><span class="p">,</span><span class="s1">&#39;(A)&#39;</span><span class="p">)</span> <span class="s1">&#39; ERROR: illegal value for Initial guess fraction.&#39;</span>
        <span class="n">status</span> <span class="o">=</span> <span class="mi">106</span>
     <span class="k">end if</span>
-
+<span class="k"> </span>
 <span class="k">    if</span> <span class="p">(</span><span class="n">me</span><span class="p">%</span><span class="n">irep</span><span class="o">==</span><span class="mi">1</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="n">me</span><span class="p">%</span><span class="n">imut</span><span class="o">==</span><span class="mi">1</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="n">me</span><span class="p">%</span><span class="n">pmuti</span><span class="o">&gt;</span><span class="mf">0.5_wp</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="n">me</span><span class="p">%</span><span class="n">ielite</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="k">then</span>
 <span class="k">       write</span><span class="p">(</span><span class="n">output_unit</span><span class="p">,</span><span class="s1">&#39;(A)&#39;</span><span class="p">)</span> <span class="p">&amp;</span>
         <span class="s1">&#39; WARNING: dangerously high value for Initial mutation rate; &#39;</span><span class="o">//</span><span class="p">&amp;</span>
         <span class="s1">&#39;(Should enforce elitism with ielite=1.)&#39;</span>
     <span class="k">end if</span>
-
+<span class="k"> </span>
 <span class="k">    if</span> <span class="p">(</span><span class="n">me</span><span class="p">%</span><span class="n">irep</span><span class="o">==</span><span class="mi">1</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="n">me</span><span class="p">%</span><span class="n">imut</span><span class="o">==</span><span class="mi">2</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="n">me</span><span class="p">%</span><span class="n">pmutmx</span><span class="o">&gt;</span><span class="mf">0.5_wp</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="n">me</span><span class="p">%</span><span class="n">ielite</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> <span class="k">then</span>
 <span class="k">       write</span><span class="p">(</span><span class="n">output_unit</span><span class="p">,</span><span class="s1">&#39;(A)&#39;</span><span class="p">)</span> <span class="p">&amp;</span>
        <span class="s1">&#39; WARNING: dangerously high value for Maximum mutation rate; &#39;</span><span class="o">//</span><span class="p">&amp;</span>
        <span class="s1">&#39;(Should enforce elitism with ielite=1.)&#39;</span>
     <span class="k">end if</span>
-
+<span class="k"> </span>
 <span class="k">    if</span> <span class="p">(</span><span class="n">me</span><span class="p">%</span><span class="n">fdif</span><span class="o">&lt;</span><span class="mf">0.33_wp</span> <span class="p">.</span><span class="nb">and</span><span class="p">.</span> <span class="n">me</span><span class="p">%</span><span class="n">irep</span><span class="o">/=</span><span class="mi">3</span><span class="p">)</span> <span class="k">then</span>
 <span class="k">       write</span><span class="p">(</span><span class="n">output_unit</span><span class="p">,</span><span class="s1">&#39;(A)&#39;</span><span class="p">)</span> <span class="p">&amp;</span>
        <span class="s1">&#39; WARNING: dangerously low value of Relative fitness differential.&#39;</span>
@@ -950,72 +902,14 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
     </div>
   </div>
 
-  <section class="visible-xs visible-sm hidden-md">
-    <hr>
-    
-
-<div class="panel panel-default">
-  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#allprocs-1">All Procedures</a></h3></div>
-  <div id="allprocs-1" class="panel-collapse collapse">
-    <div class="list-group">
-      
-      <a class="list-group-item" href="../proc/adjmut.html">adjmut</a>
-      
-      <a class="list-group-item" href="../proc/cross.html">cross</a>
-      
-      <a class="list-group-item" href="../proc/decode.html">decode</a>
-      
-      <a class="list-group-item" href="../proc/encode.html">encode</a>
-      
-      <a class="list-group-item" href="../proc/func_wrapper.html">func_wrapper</a>
-      
-      <a class="list-group-item" href="../proc/genrep.html">genrep</a>
-      
-      <a class="list-group-item" href="../proc/mutate.html">mutate</a>
-      
-      <a class="list-group-item" href="../proc/newpop.html">newpop</a>
-      
-      <a class="list-group-item" href="../proc/pikaia.html">pikaia</a>
-      
-      <a class="list-group-item" href="../proc/report.html">report</a>
-      
-      <a class="list-group-item" href="../proc/report_iteration.html">report_iteration</a>
-      
-      <a class="list-group-item" href="../proc/rninit.html">rninit</a>
-      
-      <a class="list-group-item" href="../proc/rnkpop.html">rnkpop</a>
-      
-      <a class="list-group-item" href="../proc/rosenbrock.html">rosenbrock</a>
-      
-      <a class="list-group-item" href="../proc/rqsort.html">rqsort</a>
-      
-      <a class="list-group-item" href="../proc/select_parents.html">select_parents</a>
-      
-      <a class="list-group-item" href="../proc/set_inputs.html">set_inputs</a>
-      
-      <a class="list-group-item" href="../proc/slowdown.html">slowdown</a>
-      
-      <a class="list-group-item" href="../proc/solve_with_pikaia.html">solve_with_pikaia</a>
-      
-      <a class="list-group-item" href="../proc/stdrep.html">stdrep</a>
-      
-      <a class="list-group-item" href="../proc/twod.html">twod</a>
-      
-      <a class="list-group-item" href="../proc/urand.html">urand</a>
-      
-    </div>
-  </div>
-</div>
-
-
-  </section>
 
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-4"><p>&copy; 2017 </p></div>
+        <div class="col-xs-6 col-md-4"><p>&copy; 2021 
+                                          </p></div>
         <div class="col-xs-6 col-md-4 col-md-push-4">
           <p class="text-right">
             Documentation generated by 
@@ -1046,12 +940,17 @@ private subroutine set_inputs(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pc
       MathJax.Hub.Config({
         TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
         jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js'],
-        'HTML-CSS': { 
-           styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: '#000000 ! important'} }
-        }
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
   </body>
 </html>

@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	 
-	 <meta name="description" content="Modern Fortran Edition of the Pikaia Genetic Algorithm">
+   
+   <meta name="description" content="Modern Fortran Edition of the Pikaia Genetic Algorithm">
     
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
@@ -17,6 +17,9 @@
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
     
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,13 +29,6 @@
     
     <script src="../js/jquery-2.1.3.min.js"></script>
     <script src="../js/svg-pan-zoom.min.js"></script>
-
-    
-    <script src="../tipuesearch/tipuesearch_content.js"></script>
-    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    <script src="../tipuesearch/tipuesearch_set.js"></script>
-    <script src="../tipuesearch/tipuesearch.js"></script>
-    
 
   </head>
 
@@ -52,35 +48,37 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-				
+        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
-		 aria-expanded="false">Contents <span class="caret"></span></a>
-	      <ul class="dropdown-menu">
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
               
-            <li><a href="../lists/files.html">Source Files</a></li>
-				
-				
+            <li><a href="../sourcefile/pikaia_module.f90.html">Source File</a></li>
+        
+        
+        
             <li><a href="../lists/modules.html">Modules</a></li>
-				
+        
             
                                 
             <li><a href="../lists/procedures.html">Procedures</a></li>
-				
-				
+        
+        
             <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
-								
+               
             <li><a href="../lists/types.html">Derived Types</a></li>
-				
-				
-            <li><a href="../program/pikaia_test.html">Program</a></li>
-	    
+        
+        
             </ul>
             </li>
 
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../sourcefile/pikaia_module.f90.html">Source File</a></li>
+
 
 
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
@@ -94,8 +92,6 @@
                              
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
 
-
-<li class="visible-xs hidden-sm visible-lg"><a href="../program/pikaia_test.html">Program</a></li>
 
           </ul>
         
@@ -133,19 +129,23 @@
     
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
-	  data-placement="bottom" data-html="true"
-	  title="<p>100.0% of total for derived types.</p>Including implementation: 624 statements, 100.0% of total for derived types.">44 statements</a>
+    data-placement="bottom" data-html="true"
+    title="<p>100.0% of total for derived types.</p>Including implementation: 622 statements, 100.0% of total for derived types.">44 statements</a>
      </li> 
+     
      
      
     <li><i class="fa fa-code"></i><a href="../src/pikaia_module.f90"> Source File</a></li>
      
+     
   </ul>
   <ol class="breadcrumb in-well text-right">
   
+    
      <li><a href='../sourcefile/pikaia_module.f90.html'>pikaia_module.f90</a></li>
-  
+    
      <li><a href='../module/pikaia_module.html'>pikaia_module</a></li>
+    
   
      <li class="active">pikaia_class</li>
   </ol>
@@ -165,6 +165,9 @@
     
 <div id="sidebar">
   
+<h3>Contents</h3>
+ 
+
 
 
 <div class="panel panel-primary">
@@ -242,6 +245,7 @@
 
 
 
+
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#boundprocs-0">Type-Bound Procedures</a></h3></div>
   <div id="boundprocs-0" class="panel-collapse collapse">
@@ -283,6 +287,7 @@
 
 
 
+
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
@@ -291,35 +296,25 @@
 </div>
 
 
-  <hr>
-  
 
-<div class="panel panel-default">
-  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#alltypes-0">All Derived Types</a></h3></div>
-  <div id="alltypes-0" class="panel-collapse collapse">
-    <div class="list-group">
-      
-      <a class="list-group-item" href="../type/pikaia_class.html">pikaia_class</a>
-      
-    </div>
-  </div>
 </div>
-
-
-</div>  
 
     </div>
     
     <div class="col-md-9" id='text'>
       <h2>type, public :: pikaia_class</h2>
-    
     <p>Main class for using the Pikaia algorithm.
  INIT and SOLVE are the only public methods.</p>
-    <br>
     
+    
+    
+    <br>
 
     <section class="visible-xs visible-sm hidden-md">
       
+<h3>Contents</h3>
+ 
+
 
 
 <div class="panel panel-primary">
@@ -397,6 +392,7 @@
 
 
 
+
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#boundprocs-1">Type-Bound Procedures</a></h3></div>
   <div id="boundprocs-1" class="panel-collapse collapse">
@@ -438,12 +434,14 @@
 
 
 
+
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
     <a class="list-group-item" href="../type/pikaia_class.html#src">pikaia_class</a>
   </div>
 </div>
+
 
 
     </section>
@@ -827,7 +825,7 @@
     <section>
     <h2>Type-Bound Procedures</h2>
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-init"></span><h3>procedure, public, non_overridable :: <strong>init</strong>  => <a href='../proc/set_inputs.html'>set_inputs</a> 
     
@@ -837,13 +835,14 @@
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/set_inputs.html'>set_inputs</a>(me, n, xl, xu, f, status, iter_f, np, ngen, nd, pcross, pmutmn, pmutmx, pmut, imut, fdif, irep, ielite, ivrb, convergence_tol, convergence_window, initial_guess_frac, iseed)
     
     
-	 
+   
 </h3>
     
 
@@ -864,7 +863,7 @@ private subroutine <a href='../proc/set_inputs.html'>set_inputs</a>(me, n, xl, x
 
 
 <p>Constructor for the <a href="../type/pikaia_class.html">pikaia_class</a>.
-  The routine must be called before the solve routine can be used.</p>
+  The routine must be called before the solve routine can be used.</p><a href="../proc/set_inputs.html" class="pull-right"><emph>Read more&hellip;</emph></a>
     
     <h4>Arguments</h4>
     
@@ -1263,6 +1262,7 @@ private subroutine <a href='../proc/set_inputs.html'>set_inputs</a>(me, n, xl, x
     
     
 
+        
       
       </li>
     
@@ -1270,7 +1270,7 @@ private subroutine <a href='../proc/set_inputs.html'>set_inputs</a>(me, n, xl, x
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-solve"></span><h3>procedure, public, non_overridable :: <strong>solve</strong>  => <a href='../proc/solve_with_pikaia.html'>solve_with_pikaia</a> 
     
@@ -1280,13 +1280,14 @@ private subroutine <a href='../proc/set_inputs.html'>set_inputs</a>(me, n, xl, x
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/solve_with_pikaia.html'>solve_with_pikaia</a>(me, x, f, status)
     
     
-	 
+   
 </h3>
     
 
@@ -1388,6 +1389,7 @@ private subroutine <a href='../proc/solve_with_pikaia.html'>solve_with_pikaia</a
     
     
 
+        
       
       </li>
     
@@ -1395,7 +1397,7 @@ private subroutine <a href='../proc/solve_with_pikaia.html'>solve_with_pikaia</a
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-ff"></span><h3>procedure, public, non_overridable :: <strong>ff</strong>  => <a href='../proc/func_wrapper.html'>func_wrapper</a> 
     
@@ -1412,13 +1414,14 @@ private subroutine <a href='../proc/solve_with_pikaia.html'>solve_with_pikaia</a
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/func_wrapper.html'>func_wrapper</a>(me, x, f)
     
     
-	 
+   
 </h3>
     
 
@@ -1506,6 +1509,7 @@ private subroutine <a href='../proc/func_wrapper.html'>func_wrapper</a>(me, x, f
     
     
 
+        
       
       </li>
     
@@ -1513,7 +1517,7 @@ private subroutine <a href='../proc/func_wrapper.html'>func_wrapper</a>(me, x, f
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-newpop"></span><h3>procedure, public, non_overridable :: <strong>newpop</strong>  
     
@@ -1523,13 +1527,14 @@ private subroutine <a href='../proc/func_wrapper.html'>func_wrapper</a>(me, x, f
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/newpop.html'>newpop</a>(me, oldph, newph, ifit, jfit, fitns, nnew)
     
     
-	 
+   
 </h3>
     
 
@@ -1539,7 +1544,7 @@ private subroutine <a href='../proc/newpop.html'>newpop</a>(me, oldph, newph, if
 
 
 
-<p>Replaces old population by new; recomputes fitnesses &amp; ranks</p>
+<p>Replaces old population by new; recomputes fitnesses &amp; ranks</p><a href="../proc/newpop.html" class="pull-right"><emph>Read more&hellip;</emph></a>
     
     <h4>Arguments</h4>
     
@@ -1666,6 +1671,7 @@ private subroutine <a href='../proc/newpop.html'>newpop</a>(me, oldph, newph, if
     
     
 
+        
       
       </li>
     
@@ -1673,7 +1679,7 @@ private subroutine <a href='../proc/newpop.html'>newpop</a>(me, oldph, newph, if
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-stdrep"></span><h3>procedure, public, non_overridable :: <strong>stdrep</strong>  
     
@@ -1683,13 +1689,14 @@ private subroutine <a href='../proc/newpop.html'>newpop</a>(me, oldph, newph, if
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/stdrep.html'>stdrep</a>(me, ph, oldph, fitns, ifit, jfit, nnew)
     
     
-	 
+   
 </h3>
     
 
@@ -1828,6 +1835,7 @@ private subroutine <a href='../proc/stdrep.html'>stdrep</a>(me, ph, oldph, fitns
     
     
 
+        
       
       </li>
     
@@ -1835,7 +1843,7 @@ private subroutine <a href='../proc/stdrep.html'>stdrep</a>(me, ph, oldph, fitns
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-genrep"></span><h3>procedure, public, non_overridable :: <strong>genrep</strong>  
     
@@ -1845,13 +1853,14 @@ private subroutine <a href='../proc/stdrep.html'>stdrep</a>(me, ph, oldph, fitns
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/genrep.html'>genrep</a>(me, ip, ph, newph)
     
     
-	 
+   
 </h3>
     
 
@@ -1944,6 +1953,7 @@ private subroutine <a href='../proc/genrep.html'>genrep</a>(me, ip, ph, newph)
     
     
 
+        
       
       </li>
     
@@ -1951,7 +1961,7 @@ private subroutine <a href='../proc/genrep.html'>genrep</a>(me, ip, ph, newph)
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-adjmut"></span><h3>procedure, public, non_overridable :: <strong>adjmut</strong>  
     
@@ -1961,13 +1971,14 @@ private subroutine <a href='../proc/genrep.html'>genrep</a>(me, ip, ph, newph)
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/adjmut.html'>adjmut</a>(me, oldph, fitns, ifit)
     
     
-	 
+   
 </h3>
     
 
@@ -1977,7 +1988,7 @@ private subroutine <a href='../proc/adjmut.html'>adjmut</a>(me, oldph, fitns, if
 
 
 
-<p>Dynamical adjustment of mutation rate:</p>
+<p>Dynamical adjustment of mutation rate:</p><a href="../proc/adjmut.html" class="pull-right"><emph>Read more&hellip;</emph></a>
     
     <h4>Arguments</h4>
     
@@ -2059,6 +2070,7 @@ private subroutine <a href='../proc/adjmut.html'>adjmut</a>(me, oldph, fitns, if
     
     
 
+        
       
       </li>
     
@@ -2066,7 +2078,7 @@ private subroutine <a href='../proc/adjmut.html'>adjmut</a>(me, oldph, fitns, if
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-cross"></span><h3>procedure, public, non_overridable :: <strong>cross</strong>  
     
@@ -2076,13 +2088,14 @@ private subroutine <a href='../proc/adjmut.html'>adjmut</a>(me, oldph, fitns, if
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/cross.html'>cross</a>(me, gn1, gn2)
     
     
-	 
+   
 </h3>
     
 
@@ -2095,7 +2108,7 @@ private subroutine <a href='../proc/cross.html'>cross</a>(me, gn1, gn2)
 <p>breeds two parent chromosomes into two offspring chromosomes.
   breeding occurs through crossover. If the crossover probability
   test yields true (crossover taking place), either one-point or
-  two-point crossover is used, with equal probabilities.</p>
+  two-point crossover is used, with equal probabilities.</p><a href="../proc/cross.html" class="pull-right"><emph>Read more&hellip;</emph></a>
     
     <h4>Arguments</h4>
     
@@ -2162,6 +2175,7 @@ private subroutine <a href='../proc/cross.html'>cross</a>(me, gn1, gn2)
     
     
 
+        
       
       </li>
     
@@ -2169,7 +2183,7 @@ private subroutine <a href='../proc/cross.html'>cross</a>(me, gn1, gn2)
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-encode"></span><h3>procedure, public, non_overridable :: <strong>encode</strong>  
     
@@ -2179,13 +2193,14 @@ private subroutine <a href='../proc/cross.html'>cross</a>(me, gn1, gn2)
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/encode.html'>encode</a>(me, ph, gn)
     
     
-	 
+   
 </h3>
     
 
@@ -2263,6 +2278,7 @@ private subroutine <a href='../proc/encode.html'>encode</a>(me, ph, gn)
     
     
 
+        
       
       </li>
     
@@ -2270,7 +2286,7 @@ private subroutine <a href='../proc/encode.html'>encode</a>(me, ph, gn)
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-mutate"></span><h3>procedure, public, non_overridable :: <strong>mutate</strong>  
     
@@ -2280,13 +2296,14 @@ private subroutine <a href='../proc/encode.html'>encode</a>(me, ph, gn)
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/mutate.html'>mutate</a>(me, gn)
     
     
-	 
+   
 </h3>
     
 
@@ -2297,7 +2314,7 @@ private subroutine <a href='../proc/mutate.html'>mutate</a>(me, gn)
 
 
 <p>Introduces random mutation in a genotype.
-  Mutations occur at rate pmut at all gene loci.</p>
+  Mutations occur at rate pmut at all gene loci.</p><a href="../proc/mutate.html" class="pull-right"><emph>Read more&hellip;</emph></a>
     
     <h4>Arguments</h4>
     
@@ -2349,6 +2366,7 @@ private subroutine <a href='../proc/mutate.html'>mutate</a>(me, gn)
     
     
 
+        
       
       </li>
     
@@ -2356,7 +2374,7 @@ private subroutine <a href='../proc/mutate.html'>mutate</a>(me, gn)
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-decode"></span><h3>procedure, public, non_overridable :: <strong>decode</strong>  
     
@@ -2366,13 +2384,14 @@ private subroutine <a href='../proc/mutate.html'>mutate</a>(me, gn)
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/decode.html'>decode</a>(me, gn, ph)
     
     
-	 
+   
 </h3>
     
 
@@ -2450,6 +2469,7 @@ private subroutine <a href='../proc/decode.html'>decode</a>(me, gn, ph)
     
     
 
+        
       
       </li>
     
@@ -2457,7 +2477,7 @@ private subroutine <a href='../proc/decode.html'>decode</a>(me, gn, ph)
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-select_parents"></span><h3>procedure, public, non_overridable :: <strong>select_parents</strong>  
     
@@ -2467,13 +2487,14 @@ private subroutine <a href='../proc/decode.html'>decode</a>(me, gn, ph)
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/select_parents.html'>select_parents</a>(me, jfit, imom, idad)
     
     
-	 
+   
 </h3>
     
 
@@ -2485,7 +2506,7 @@ private subroutine <a href='../proc/select_parents.html'>select_parents</a>(me, 
 
 <p>Selects two parents from the population, using roulette wheel
   algorithm with the relative fitnesses of the phenotypes as
-  the "hit" probabilities.</p>
+  the "hit" probabilities.</p><a href="../proc/select_parents.html" class="pull-right"><emph>Read more&hellip;</emph></a>
     
     <h4>Arguments</h4>
     
@@ -2567,6 +2588,7 @@ private subroutine <a href='../proc/select_parents.html'>select_parents</a>(me, 
     
     
 
+        
       
       </li>
     
@@ -2574,7 +2596,7 @@ private subroutine <a href='../proc/select_parents.html'>select_parents</a>(me, 
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-report"></span><h3>procedure, public, non_overridable :: <strong>report</strong>  
     
@@ -2584,13 +2606,14 @@ private subroutine <a href='../proc/select_parents.html'>select_parents</a>(me, 
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/report.html'>report</a>(me, oldph, fitns, ifit, ig, nnew)
     
     
-	 
+   
 </h3>
     
 
@@ -2712,6 +2735,7 @@ private subroutine <a href='../proc/report.html'>report</a>(me, oldph, fitns, if
     
     
 
+        
       
       </li>
     
@@ -2719,7 +2743,7 @@ private subroutine <a href='../proc/report.html'>report</a>(me, oldph, fitns, if
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-rnkpop"></span><h3>procedure, public, non_overridable :: <strong>rnkpop</strong>  
     
@@ -2729,13 +2753,14 @@ private subroutine <a href='../proc/report.html'>report</a>(me, oldph, fitns, if
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/rnkpop.html'>rnkpop</a>(me, arrin, indx, rank)
     
     
-	 
+   
 </h3>
     
 
@@ -2829,6 +2854,7 @@ private subroutine <a href='../proc/rnkpop.html'>rnkpop</a>(me, arrin, indx, ran
     
     
 
+        
       
       </li>
     
@@ -2836,7 +2862,7 @@ private subroutine <a href='../proc/rnkpop.html'>rnkpop</a>(me, arrin, indx, ran
 </div>
 
     
-	   
+     
 <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-pikaia"></span><h3>procedure, public, non_overridable :: <strong>pikaia</strong>  
     
@@ -2846,13 +2872,14 @@ private subroutine <a href='../proc/rnkpop.html'>rnkpop</a>(me, arrin, indx, ran
     
       <li class="list-group-item">
       
-         
+        
+          
     
     <h3>
 private subroutine <a href='../proc/pikaia.html'>pikaia</a>(me, x, f, status)
     
     
-	 
+   
 </h3>
     
 
@@ -2864,7 +2891,7 @@ private subroutine <a href='../proc/pikaia.html'>pikaia</a>(me, x, f, status)
 
 <p>Optimization (maximization) of user-supplied "fitness" function
   over n-dimensional parameter space x using a basic genetic
-  algorithm method.</p>
+  algorithm method.</p><a href="../proc/pikaia.html" class="pull-right"><emph>Read more&hellip;</emph></a>
     
     <h4>Arguments</h4>
     
@@ -2905,8 +2932,8 @@ private subroutine <a href='../proc/pikaia.html'>pikaia</a>(me, x, f, status)
   <td></td>
   
   <td>dimension(:)</td><td>::</td>
-  <td><strong>x</strong></td><td><p>Input - initial guess for solution vector.
- Output - the "fittest" (optimal) solution found,
+  <td><strong>x</strong></td><td><p>Input - initial guess for solution vector. 
+ Output - the "fittest" (optimal) solution found, 
  i.e., the solution which maximizes the fitness function.</p></td>
   
 </tr>
@@ -2949,6 +2976,7 @@ private subroutine <a href='../proc/pikaia.html'>pikaia</a>(me, x, f, status)
     
     
 
+        
       
       </li>
     
@@ -2961,9 +2989,9 @@ private subroutine <a href='../proc/pikaia.html'>pikaia</a>(me, x, f, status)
     
     
     <section>
-    <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <h3><span class="anchor" id="src"></span>Source Code</h3>
     <div class="highlight"><pre><span></span>    <span class="k">type</span><span class="p">,</span><span class="k">public</span> <span class="kd">::</span> <span class="n">pikaia_class</span>
-
+    
         <span class="c">!! Main class for using the Pikaia algorithm.</span>
         <span class="c">!! INIT and SOLVE are the only public methods.</span>
 
@@ -3031,30 +3059,14 @@ private subroutine <a href='../proc/pikaia.html'>pikaia</a>(me, x, f, status)
     </div>
   </div>
 
-  <section class="visible-xs visible-sm hidden-md">
-    <hr>
-    
-
-<div class="panel panel-default">
-  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#alltypes-1">All Derived Types</a></h3></div>
-  <div id="alltypes-1" class="panel-collapse collapse">
-    <div class="list-group">
-      
-      <a class="list-group-item" href="../type/pikaia_class.html">pikaia_class</a>
-      
-    </div>
-  </div>
-</div>
-
-
-  </section>
 
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-4"><p>&copy; 2017 </p></div>
+        <div class="col-xs-6 col-md-4"><p>&copy; 2021 
+                                          </p></div>
         <div class="col-xs-6 col-md-4 col-md-push-4">
           <p class="text-right">
             Documentation generated by 
@@ -3085,12 +3097,17 @@ private subroutine <a href='../proc/pikaia.html'>pikaia</a>(me, x, f, status)
       MathJax.Hub.Config({
         TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
         jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js'],
-        'HTML-CSS': { 
-           styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: '#000000 ! important'} }
-        }
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
   </body>
 </html>

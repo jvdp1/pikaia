@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	 
-	 <meta name="description" content="Modern Fortran Edition of the Pikaia Genetic Algorithm">
+   
+   <meta name="description" content="Modern Fortran Edition of the Pikaia Genetic Algorithm">
     
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
@@ -19,6 +19,9 @@ All Procedures &ndash; Pikaia
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
     
+    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,13 +31,6 @@ All Procedures &ndash; Pikaia
     
     <script src="../js/jquery-2.1.3.min.js"></script>
     <script src="../js/svg-pan-zoom.min.js"></script>
-
-    
-    <script src="../tipuesearch/tipuesearch_content.js"></script>
-    <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    <script src="../tipuesearch/tipuesearch_set.js"></script>
-    <script src="../tipuesearch/tipuesearch.js"></script>
-    
 
   </head>
 
@@ -54,35 +50,37 @@ All Procedures &ndash; Pikaia
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-				
+        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
-		 aria-expanded="false">Contents <span class="caret"></span></a>
-	      <ul class="dropdown-menu">
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
               
-            <li><a href="../lists/files.html">Source Files</a></li>
-				
-				
+            <li><a href="../sourcefile/pikaia_module.f90.html">Source File</a></li>
+        
+        
+        
             <li><a href="../lists/modules.html">Modules</a></li>
-				
+        
             
                                 
             <li><a href="../lists/procedures.html">Procedures</a></li>
-				
-				
+        
+        
             <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
-								
+               
             <li><a href="../lists/types.html">Derived Types</a></li>
-				
-				
-            <li><a href="../program/pikaia_test.html">Program</a></li>
-	    
+        
+        
             </ul>
             </li>
 
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../sourcefile/pikaia_module.f90.html">Source File</a></li>
+
 
 
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
@@ -96,8 +94,6 @@ All Procedures &ndash; Pikaia
                              
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
 
-
-<li class="visible-xs hidden-sm visible-lg"><a href="../program/pikaia_test.html">Program</a></li>
 
           </ul>
         
@@ -123,12 +119,12 @@ All Procedures &ndash; Pikaia
 			 <thead><tr><th>Procedure</th><th>Location</th><th>Procedure Type</th><th>Description</th></tr></thead>
 			 <tbody>
 			 
-			   <tr><td><a href='../proc/adjmut.html'>adjmut</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Dynamical adjustment of mutation rate:</p></td></tr>
+			   <tr><td><a href='../proc/adjmut.html'>adjmut</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Dynamical adjustment of mutation rate:</p><a href="../proc/adjmut.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
 			 
 			   <tr><td><a href='../proc/cross.html'>cross</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>breeds two parent chromosomes into two offspring chromosomes.
   breeding occurs through crossover. If the crossover probability
   test yields true (crossover taking place), either one-point or
-  two-point crossover is used, with equal probabilities.</p></td></tr>
+  two-point crossover is used, with equal probabilities.</p><a href="../proc/cross.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
 			 
 			   <tr><td><a href='../proc/decode.html'>decode</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>decode genotype into phenotype parameters
   ph(k) are x,y coordinates [ 0 &lt; x,y &lt; 1 ]</p></td></tr>
@@ -143,40 +139,31 @@ All Procedures &ndash; Pikaia
   population array</p></td></tr>
 			 
 			   <tr><td><a href='../proc/mutate.html'>mutate</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Introduces random mutation in a genotype.
-  Mutations occur at rate pmut at all gene loci.</p></td></tr>
+  Mutations occur at rate pmut at all gene loci.</p><a href="../proc/mutate.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
 			 
-			   <tr><td><a href='../proc/newpop.html'>newpop</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Replaces old population by new; recomputes fitnesses &amp; ranks</p></td></tr>
+			   <tr><td><a href='../proc/newpop.html'>newpop</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Replaces old population by new; recomputes fitnesses &amp; ranks</p><a href="../proc/newpop.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
 			 
 			   <tr><td><a href='../proc/pikaia.html'>pikaia</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Optimization (maximization) of user-supplied "fitness" function
   over n-dimensional parameter space x using a basic genetic
-  algorithm method.</p></td></tr>
+  algorithm method.</p><a href="../proc/pikaia.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
 			 
 			   <tr><td><a href='../proc/report.html'>report</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Write generation report to standard output</p></td></tr>
 			 
-			   <tr><td><a href='../proc/report_iteration.html'>report_iteration</a></td><td><a href='../program/pikaia_test.html'>pikaia_test</a></td><td>Subroutine</td><td><p>A simple iteration reporting function.
- Writes <code>iter,x,f</code> to the output file.</p></td></tr>
-			 
-			   <tr><td><a href='../proc/rninit.html'>rninit</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Initialize the random number generator with the input seed value.</p></td></tr>
+			   <tr><td><a href='../proc/rninit.html'>rninit</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Initialize the random number generator with the input seed value.</p><a href="../proc/rninit.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
 			 
 			   <tr><td><a href='../proc/rnkpop.html'>rnkpop</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Ranks initial population.
   Calls external sort routine to produce key index and rank order
   of input array arrin (which is not altered).</p></td></tr>
 			 
-			   <tr><td><a href='../proc/rosenbrock.html'>rosenbrock</a></td><td><a href='../program/pikaia_test.html'>pikaia_test</a></td><td>Subroutine</td><td><p>Rosenbrock function for testing the algorithm.
- The minimum is at f(1,1) = 0.</p></td></tr>
-			 
 			   <tr><td><a href='../proc/rqsort.html'>rqsort</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Return integer array p which indexes array a in increasing order.
-  Array a is not disturbed.  The Quicksort algorithm is used.</p></td></tr>
+  Array a is not disturbed.  The Quicksort algorithm is used.</p><a href="../proc/rqsort.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
 			 
 			   <tr><td><a href='../proc/select_parents.html'>select_parents</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Selects two parents from the population, using roulette wheel
   algorithm with the relative fitnesses of the phenotypes as
-  the "hit" probabilities.</p></td></tr>
+  the "hit" probabilities.</p><a href="../proc/select_parents.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
 			 
 			   <tr><td><a href='../proc/set_inputs.html'>set_inputs</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Constructor for the <a href="../type/pikaia_class.html">pikaia_class</a>.
-  The routine must be called before the solve routine can be used.</p></td></tr>
-			 
-			   <tr><td><a href='../proc/slowdown.html'>slowdown</a></td><td><a href='../program/pikaia_test.html'>pikaia_test</a></td><td>Subroutine</td><td><p>for the openmp test.
- just a function to slow things down</p></td></tr>
+  The routine must be called before the solve routine can be used.</p><a href="../proc/set_inputs.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
 			 
 			   <tr><td><a href='../proc/solve_with_pikaia.html'>solve_with_pikaia</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Subroutine</td><td><p>Main pikaia wrapper used by the class.</p></td></tr>
 			 
@@ -184,289 +171,11 @@ All Procedures &ndash; Pikaia
   only if they are fit enough (replace-random if irep=2 or
   replace-worst if irep=3).</p></td></tr>
 			 
-			   <tr><td><a href='../proc/twod.html'>twod</a></td><td><a href='../program/pikaia_test.html'>pikaia_test</a></td><td>Subroutine</td><td><p>Compute sample fitness function
- (a smooth 2-d landscape)</p></td></tr>
-			 
 			   <tr><td><a href='../proc/urand.html'>urand</a></td><td><a href='../module/pikaia_module.html'>pikaia_module</a></td><td>Function</td><td><p>Return the next pseudo-random deviate from a sequence which is
-  uniformly distributed in the interval [0,1]</p></td></tr>
+  uniformly distributed in the interval [0,1]</p><a href="../proc/urand.html" class="pull-right"><emph>Read more&hellip;</emph></a></td></tr>
 			 
 			 </tbody></table>
              
-                <div class="depgraph"><?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
- "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.26.3 (20100126.1600)
- -->
-<!-- Title: call~~graph~~CallGraph Pages: 1 -->
-<svg id="callgraphCallGraph" width="194pt" height="782pt"
- viewBox="0.00 0.00 194.00 782.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="call~~graph~~CallGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 778)">
-<title>call~~graph~~CallGraph</title>
-<polygon fill="white" stroke="white" points="-4,5 -4,-778 191,-778 191,5 -4,5"/>
-<!-- proc~rnkpop -->
-<g id="node1" class="node"><title>proc~rnkpop</title>
-<a xlink:href="../proc/rnkpop.html" xlink:title="rnkpop">
-<polygon fill="#d9534f" stroke="#d9534f" points="75,-26 21,-26 21,-1.24345e-14 75,-3.55271e-15 75,-26"/>
-<text text-anchor="middle" x="48" y="-10.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rnkpop</text>
-</a>
-</g>
-<!-- proc~rqsort -->
-<g id="node15" class="node"><title>proc~rqsort</title>
-<a xlink:href="../proc/rqsort.html" xlink:title="rqsort">
-<polygon fill="#d9534f" stroke="#d9534f" points="186,-26 132,-26 132,-1.24345e-14 186,-3.55271e-15 186,-26"/>
-<text text-anchor="middle" x="159" y="-10.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rqsort</text>
-</a>
-</g>
-<!-- proc~rnkpop&#45;&gt;proc~rqsort -->
-<g id="edge2" class="edge"><title>proc~rnkpop&#45;&gt;proc~rqsort</title>
-<path fill="none" stroke="#000000" d="M75.1537,-13C89.1294,-13 106.383,-13 121.599,-13"/>
-<polygon fill="#000000" stroke="#000000" points="121.742,-16.5001 131.742,-13 121.742,-9.5001 121.742,-16.5001"/>
-</g>
-<!-- proc~report -->
-<g id="node2" class="node"><title>proc~report</title>
-<a xlink:href="../proc/report.html" xlink:title="report">
-<polygon fill="#d9534f" stroke="#d9534f" points="75,-70 21,-70 21,-44 75,-44 75,-70"/>
-<text text-anchor="middle" x="48" y="-54.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">report</text>
-</a>
-</g>
-<!-- proc~genrep -->
-<g id="node3" class="node"><title>proc~genrep</title>
-<a xlink:href="../proc/genrep.html" xlink:title="genrep">
-<polygon fill="#d9534f" stroke="#d9534f" points="75,-114 21,-114 21,-88 75,-88 75,-114"/>
-<text text-anchor="middle" x="48" y="-98.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">genrep</text>
-</a>
-</g>
-<!-- proc~cross -->
-<g id="node4" class="node"><title>proc~cross</title>
-<a xlink:href="../proc/cross.html" xlink:title="cross">
-<polygon fill="#d9534f" stroke="#d9534f" points="75,-334 21,-334 21,-308 75,-308 75,-334"/>
-<text text-anchor="middle" x="48" y="-318.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">cross</text>
-</a>
-</g>
-<!-- proc~urand -->
-<g id="node18" class="node"><title>proc~urand</title>
-<a xlink:href="../proc/urand.html" xlink:title="urand">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="186,-246 132,-246 132,-220 186,-220 186,-246"/>
-<text text-anchor="middle" x="159" y="-230.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">urand</text>
-</a>
-</g>
-<!-- proc~cross&#45;&gt;proc~urand -->
-<g id="edge4" class="edge"><title>proc~cross&#45;&gt;proc~urand</title>
-<path fill="none" stroke="#000000" d="M75.1454,-310.719C82.2314,-307.467 89.6548,-303.522 96,-299 113.733,-286.362 130.587,-268.265 142.394,-254.217"/>
-<polygon fill="#000000" stroke="#000000" points="145.43,-256.033 149.055,-246.078 140.013,-251.599 145.43,-256.033"/>
-</g>
-<!-- proc~stdrep -->
-<g id="node5" class="node"><title>proc~stdrep</title>
-<a xlink:href="../proc/stdrep.html" xlink:title="stdrep">
-<polygon fill="#d9534f" stroke="#d9534f" points="75,-290 21,-290 21,-264 75,-264 75,-290"/>
-<text text-anchor="middle" x="48" y="-274.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">stdrep</text>
-</a>
-</g>
-<!-- proc~stdrep&#45;&gt;proc~urand -->
-<g id="edge6" class="edge"><title>proc~stdrep&#45;&gt;proc~urand</title>
-<path fill="none" stroke="#000000" d="M75.1537,-266.236C89.2638,-260.643 106.715,-253.725 122.037,-247.652"/>
-<polygon fill="#000000" stroke="#000000" points="123.735,-250.744 131.742,-243.805 121.156,-244.236 123.735,-250.744"/>
-</g>
-<!-- proc~report_iteration -->
-<g id="node6" class="node"><title>proc~report_iteration</title>
-<a xlink:href="../proc/report_iteration.html" xlink:title="report_iteration">
-<polygon fill="#d9534f" stroke="#d9534f" points="90,-378 6,-378 6,-352 90,-352 90,-378"/>
-<text text-anchor="middle" x="48" y="-362.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">report_iteration</text>
-</a>
-</g>
-<!-- proc~pikaia -->
-<g id="node7" class="node"><title>proc~pikaia</title>
-<a xlink:href="../proc/pikaia.html" xlink:title="pikaia">
-<polygon fill="#d9534f" stroke="#d9534f" points="75,-158 21,-158 21,-132 75,-132 75,-158"/>
-<text text-anchor="middle" x="48" y="-142.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pikaia</text>
-</a>
-</g>
-<!-- proc~adjmut -->
-<g id="node9" class="node"><title>proc~adjmut</title>
-<a xlink:href="../proc/adjmut.html" xlink:title="adjmut">
-<polygon fill="#d9534f" stroke="#d9534f" points="186,-180 132,-180 132,-154 186,-154 186,-180"/>
-<text text-anchor="middle" x="159" y="-164.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">adjmut</text>
-</a>
-</g>
-<!-- proc~pikaia&#45;&gt;proc~adjmut -->
-<g id="edge10" class="edge"><title>proc~pikaia&#45;&gt;proc~adjmut</title>
-<path fill="none" stroke="#000000" d="M75.1537,-150.382C89.1294,-153.152 106.383,-156.571 121.599,-159.587"/>
-<polygon fill="#000000" stroke="#000000" points="121.252,-163.086 131.742,-161.598 122.613,-156.22 121.252,-163.086"/>
-</g>
-<!-- proc~pikaia&#45;&gt;proc~urand -->
-<g id="edge12" class="edge"><title>proc~pikaia&#45;&gt;proc~urand</title>
-<path fill="none" stroke="#000000" d="M75.1454,-155.281C82.2314,-158.533 89.6548,-162.478 96,-167 113.733,-179.638 130.587,-197.735 142.394,-211.783"/>
-<polygon fill="#000000" stroke="#000000" points="140.013,-214.401 149.055,-219.922 145.43,-209.967 140.013,-214.401"/>
-</g>
-<!-- proc~rninit -->
-<g id="node20" class="node"><title>proc~rninit</title>
-<a xlink:href="../proc/rninit.html" xlink:title="rninit">
-<polygon fill="#d9534f" stroke="#d9534f" points="186,-136 132,-136 132,-110 186,-110 186,-136"/>
-<text text-anchor="middle" x="159" y="-120.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rninit</text>
-</a>
-</g>
-<!-- proc~pikaia&#45;&gt;proc~rninit -->
-<g id="edge8" class="edge"><title>proc~pikaia&#45;&gt;proc~rninit</title>
-<path fill="none" stroke="#000000" d="M75.1537,-139.618C89.1294,-136.848 106.383,-133.429 121.599,-130.413"/>
-<polygon fill="#000000" stroke="#000000" points="122.613,-133.78 131.742,-128.402 121.252,-126.914 122.613,-133.78"/>
-</g>
-<!-- proc~func_wrapper -->
-<g id="node8" class="node"><title>proc~func_wrapper</title>
-<a xlink:href="../proc/func_wrapper.html" xlink:title="func_wrapper">
-<polygon fill="#d9534f" stroke="#d9534f" points="87,-422 9,-422 9,-396 87,-396 87,-422"/>
-<text text-anchor="middle" x="48" y="-406.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">func_wrapper</text>
-</a>
-</g>
-<!-- proc~set_inputs -->
-<g id="node10" class="node"><title>proc~set_inputs</title>
-<a xlink:href="../proc/set_inputs.html" xlink:title="set_inputs">
-<polygon fill="#d9534f" stroke="#d9534f" points="78,-466 18,-466 18,-440 78,-440 78,-466"/>
-<text text-anchor="middle" x="48" y="-450.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">set_inputs</text>
-</a>
-</g>
-<!-- proc~solve_with_pikaia -->
-<g id="node11" class="node"><title>proc~solve_with_pikaia</title>
-<a xlink:href="../proc/solve_with_pikaia.html" xlink:title="solve_with_pikaia">
-<polygon fill="#d9534f" stroke="#d9534f" points="96,-510 3.55271e-14,-510 0,-484 96,-484 96,-510"/>
-<text text-anchor="middle" x="48" y="-494.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">solve_with_pikaia</text>
-</a>
-</g>
-<!-- proc~newpop -->
-<g id="node12" class="node"><title>proc~newpop</title>
-<a xlink:href="../proc/newpop.html" xlink:title="newpop">
-<polygon fill="#d9534f" stroke="#d9534f" points="75,-554 21,-554 21,-528 75,-528 75,-554"/>
-<text text-anchor="middle" x="48" y="-538.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">newpop</text>
-</a>
-</g>
-<!-- proc~rosenbrock -->
-<g id="node13" class="node"><title>proc~rosenbrock</title>
-<a xlink:href="../proc/rosenbrock.html" xlink:title="rosenbrock">
-<polygon fill="#d9534f" stroke="#d9534f" points="81,-598 15,-598 15,-572 81,-572 81,-598"/>
-<text text-anchor="middle" x="48" y="-582.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">rosenbrock</text>
-</a>
-</g>
-<!-- proc~mutate -->
-<g id="node14" class="node"><title>proc~mutate</title>
-<a xlink:href="../proc/mutate.html" xlink:title="mutate">
-<polygon fill="#d9534f" stroke="#d9534f" points="75,-246 21,-246 21,-220 75,-220 75,-246"/>
-<text text-anchor="middle" x="48" y="-230.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">mutate</text>
-</a>
-</g>
-<!-- proc~mutate&#45;&gt;proc~urand -->
-<g id="edge14" class="edge"><title>proc~mutate&#45;&gt;proc~urand</title>
-<path fill="none" stroke="#000000" d="M75.1537,-233C89.1294,-233 106.383,-233 121.599,-233"/>
-<polygon fill="#000000" stroke="#000000" points="121.742,-236.5 131.742,-233 121.742,-229.5 121.742,-236.5"/>
-</g>
-<!-- proc~twod -->
-<g id="node16" class="node"><title>proc~twod</title>
-<a xlink:href="../proc/twod.html" xlink:title="twod">
-<polygon fill="#d9534f" stroke="#d9534f" points="75,-642 21,-642 21,-616 75,-616 75,-642"/>
-<text text-anchor="middle" x="48" y="-626.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">twod</text>
-</a>
-</g>
-<!-- proc~decode -->
-<g id="node17" class="node"><title>proc~decode</title>
-<a xlink:href="../proc/decode.html" xlink:title="decode">
-<polygon fill="#d9534f" stroke="#d9534f" points="75,-686 21,-686 21,-660 75,-660 75,-686"/>
-<text text-anchor="middle" x="48" y="-670.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">decode</text>
-</a>
-</g>
-<!-- proc~encode -->
-<g id="node19" class="node"><title>proc~encode</title>
-<a xlink:href="../proc/encode.html" xlink:title="encode">
-<polygon fill="#d9534f" stroke="#d9534f" points="75,-730 21,-730 21,-704 75,-704 75,-730"/>
-<text text-anchor="middle" x="48" y="-714.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">encode</text>
-</a>
-</g>
-<!-- proc~select_parents -->
-<g id="node21" class="node"><title>proc~select_parents</title>
-<a xlink:href="../proc/select_parents.html" xlink:title="select_parents">
-<polygon fill="#d9534f" stroke="#d9534f" points="89,-202 7,-202 7,-176 89,-176 89,-202"/>
-<text text-anchor="middle" x="48" y="-186.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">select_parents</text>
-</a>
-</g>
-<!-- proc~select_parents&#45;&gt;proc~urand -->
-<g id="edge16" class="edge"><title>proc~select_parents&#45;&gt;proc~urand</title>
-<path fill="none" stroke="#000000" d="M81.0031,-202.082C94.0649,-207.26 109.128,-213.231 122.513,-218.537"/>
-<polygon fill="#000000" stroke="#000000" points="121.324,-221.83 131.91,-222.261 123.903,-215.323 121.324,-221.83"/>
-</g>
-<!-- proc~slowdown -->
-<g id="node22" class="node"><title>proc~slowdown</title>
-<a xlink:href="../proc/slowdown.html" xlink:title="slowdown">
-<polygon fill="#d9534f" stroke="#d9534f" points="77,-774 19,-774 19,-748 77,-748 77,-774"/>
-<text text-anchor="middle" x="48" y="-758.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">slowdown</text>
-</a>
-</g>
-</g>
-</svg>
-</div>
-                <div><a type="button" class="graph-help" data-toggle="modal" href="#graph-help-text">Help</a></div>
-                <div class="modal fade" id="graph-help-text" tabindex="-1" role="dialog">
-                  <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="-graph-help-label">Graph Key</h4>
-                      </div>
-                      <div class="modal-body">
-                        
-    <p>Nodes of different colours represent the following: </p>
-    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
- "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.26.3 (20100126.1600)
- -->
-<!-- Title: Graph Key Pages: 1 -->
-<svg width="556pt" height="34pt"
- viewBox="0.00 0.00 556.00 34.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph1" class="graph" transform="scale(1 1) rotate(0) translate(4 30)">
-<title>Graph Key</title>
-<polygon fill="white" stroke="white" points="-4,5 -4,-30 553,-30 553,5 -4,5"/>
-<!-- Subroutine -->
-<g id="node1" class="node"><title>Subroutine</title>
-<polygon fill="#d9534f" stroke="#d9534f" points="64,-26 3.19744e-14,-26 0,-1.24345e-14 64,-3.55271e-15 64,-26"/>
-<text text-anchor="middle" x="32" y="-10.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Subroutine</text>
-</g>
-<!-- Function -->
-<g id="node2" class="node"><title>Function</title>
-<polygon fill="#d94e8f" stroke="#d94e8f" points="136,-26 82,-26 82,-1.24345e-14 136,-3.55271e-15 136,-26"/>
-<text text-anchor="middle" x="109" y="-10.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Function</text>
-</g>
-<!-- Interface -->
-<g id="node3" class="node"><title>Interface</title>
-<polygon fill="#a7506f" stroke="#a7506f" points="208,-26 154,-26 154,-1.24345e-14 208,-3.55271e-15 208,-26"/>
-<text text-anchor="middle" x="181" y="-10.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Interface</text>
-</g>
-<!-- Unknown Procedure Type -->
-<g id="node4" class="node"><title>Unknown Procedure Type</title>
-<polygon fill="#777777" stroke="#777777" points="362,-26 226,-26 226,-1.24345e-14 362,-3.55271e-15 362,-26"/>
-<text text-anchor="middle" x="294" y="-10.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Unknown Procedure Type</text>
-</g>
-<!-- Program -->
-<g id="node5" class="node"><title>Program</title>
-<polygon fill="#f0ad4e" stroke="#f0ad4e" points="434,-26 380,-26 380,-1.24345e-14 434,-3.55271e-15 434,-26"/>
-<text text-anchor="middle" x="407" y="-10.55" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">Program</text>
-</g>
-<!-- This Page&#39;s Entity -->
-<g id="node6" class="node"><title>This Page&#39;s Entity</title>
-<polygon fill="none" stroke="black" points="548,-26 452,-26 452,-1.24345e-14 548,-3.55271e-15 548,-26"/>
-<text text-anchor="middle" x="500" y="-10.55" font-family="Helvetica,sans-Serif" font-size="10.50">This Page&#39;s Entity</text>
-</g>
-</g>
-</svg>
-
-    
-    <p>Solid arrows point from a procedure to one which it calls. Dashed 
-    arrows point from an interface to procedures which implement that interface.
-    This could include the module procedures in a generic interface or the
-    implementation in a submodule of an interface in a parent module.
-    </p>
-    
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
         </div>
       </div>
 
@@ -475,7 +184,8 @@ All Procedures &ndash; Pikaia
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-4"><p>&copy; 2017 </p></div>
+        <div class="col-xs-6 col-md-4"><p>&copy; 2021 
+                                          </p></div>
         <div class="col-xs-6 col-md-4 col-md-push-4">
           <p class="text-right">
             Documentation generated by 
@@ -506,12 +216,17 @@ All Procedures &ndash; Pikaia
       MathJax.Hub.Config({
         TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
         jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js'],
-        'HTML-CSS': { 
-           styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: '#000000 ! important'} }
-        }
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    <script src="../tipuesearch/tipuesearch_content.js"></script>
+    <script src="../tipuesearch/tipuesearch_set.js"></script>
+    <script src="../tipuesearch/tipuesearch.js"></script>
+    
+    
   </body>
 </html>
