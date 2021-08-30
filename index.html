@@ -139,20 +139,21 @@
 		  
           <h1>Pikaia</h1>
           <h1><img alt="pikaia" src="media/logo.png"></h1>
-<h1>pikaia <a href="https://github.com/jacobwilliams/pikaia/releases/latest"><img alt="GitHub release" src="https://img.shields.io/github/release/jacobwilliams/pikaia.svg?style=plastic"></a></h1>
-<p>Modern Fortran Edition of the Pikaia Genetic Algorithm</p>
+<p><strong>Pikaia</strong>: Modern Fortran Edition of the PIKAIA Genetic Algorithm</p>
 <h3>Status</h3>
-<p><img alt="Build Status" src="https://github.com/jacobwilliams/pikaia/actions/workflows/CI.yml/badge.svg"></p>
+<p><img alt="Build Status" src="https://github.com/jacobwilliams/pikaia/actions/workflows/CI.yml/badge.svg"> <a href="https://github.com/jacobwilliams/pikaia/releases/latest"><img alt="GitHub release" src="https://img.shields.io/github/release/jacobwilliams/pikaia.svg?style=plastic"></a></p>
 <h3>Overview</h3>
-<p>This is a refactoring of the PIKAIA unconstrained optimization code from the <a href="http://www.hao.ucar.edu/modeling/pikaia/pikaia.php">High Altitude Observatory</a>.  The original code is public domain and was written by Paul Charbonneau &amp; Barry Knapp.  The new code differs from the old code in the following respects:
- * The original fixed-form source (FORTRAN 77) was converted to free-form source.
- * The code is now object-oriented Fortran 2003/2008.  All user interaction is now through the <code>pikaia_class</code>.
- * All real variables are now double precision.
- * The original random number generator was replaced with MT19937-64 (64-bit Mersenne Twister).
- * There are various new options (e.g., a convergence window with a tolerance can be specified as a stopping condition, and the user can specify a subroutine for reporting iterations).
- * Mapping the variables to be between 0 and 1 now occurs internally, rather than requiring the user to do it.
- * Can now include an initial guess in the initial population.
- * Some OpenMP support has been added.</p>
+<p>This is a refactoring of the PIKAIA unconstrained optimization code from the <a href="http://www.hao.ucar.edu/modeling/pikaia/pikaia.php">High Altitude Observatory</a>.  The original code is public domain and was written by Paul Charbonneau &amp; Barry Knapp.  The new code differs from the old code in the following respects:</p>
+<ul>
+<li>The original fixed-form source (FORTRAN 77) was converted to free-form source.</li>
+<li>The code is now object-oriented Fortran 2003/2008.  All user interaction is now through the   <code>pikaia_class</code>.</li>
+<li>All real variables are now double precision.</li>
+<li>The original random number generator was replaced with MT19937-64 (64-bit Mersenne Twister).</li>
+<li>There are various new options (e.g., a convergence window with a tolerance can be specified as a   stopping condition, and the user can specify a subroutine for reporting iterations).</li>
+<li>Mapping the variables to be between 0 and 1 now occurs internally, rather than requiring the user   to do it.</li>
+<li>Can now include an initial guess in the initial population.</li>
+<li>Some OpenMP support has been added.</li>
+</ul>
 <h3>Compiling</h3>
 <p>A <a href="https://github.com/szaghi/FoBiS">FoBiS</a> configuration file (<code>pikaia.fobis</code>) is also provided that can also build the library and examples. Use the <code>mode</code> flag to indicate what to build. For example:</p>
 <ul>
