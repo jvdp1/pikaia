@@ -57,7 +57,7 @@
         <ul class="dropdown-menu">
           
               
-            <li><a href="../sourcefile/pikaia_module.f90.html">Source File</a></li>
+            <li><a href="../lists/files.html">Source Files</a></li>
         
         
         
@@ -80,7 +80,7 @@
             </li>
 
 
-<li class="visible-xs hidden-sm visible-lg"><a href="../sourcefile/pikaia_module.f90.html">Source File</a></li>
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
 
 
 
@@ -136,7 +136,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title=" 3.7% of total for procedures.">25 statements</a>
+    title=" 3.2% of total for procedures.">25 statements</a>
      </li> 
      
      
@@ -244,7 +244,7 @@ private subroutine newpop(me, oldph, newph, ifit, jfit, fitns, nnew)
   
 <tr>
   
-  <td><span class="anchor" id="variable-me~17"></span>class(<a href='../type/pikaia_class.html'>pikaia_class</a>),</td>
+  <td><span class="anchor" id="variable-me~19"></span>class(<a href='../type/pikaia_class.html'>pikaia_class</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
@@ -442,14 +442,14 @@ private subroutine newpop(me, oldph, newph, ifit, jfit, fitns, nnew)
 <span class="k">    end if</span>
 
     <span class="c">!replace population</span>
+    <span class="n">oldph</span> <span class="o">=</span> <span class="n">newph</span>
+
+    <span class="c">!get fitness using caller&#39;s fitness function</span>
+    <span class="c">!$omp parallel do private(i)</span>
     <span class="k">do </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">np</span>
-
-        <span class="n">oldph</span><span class="p">(:,</span><span class="n">i</span><span class="p">)</span><span class="o">=</span><span class="n">newph</span><span class="p">(:,</span><span class="n">i</span><span class="p">)</span>
-
-        <span class="c">!get fitness using caller&#39;s fitness function</span>
         <span class="k">call </span><span class="n">me</span><span class="p">%</span><span class="n">ff</span><span class="p">(</span><span class="n">oldph</span><span class="p">(:,</span><span class="n">i</span><span class="p">),</span><span class="n">fitns</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
-
     <span class="k">end do</span>
+    <span class="c">!$omp end parallel do</span>
 
     <span class="c">!compute new population fitness rank order</span>
     <span class="k">call </span><span class="n">me</span><span class="p">%</span><span class="n">rnkpop</span><span class="p">(</span><span class="n">fitns</span><span class="p">,</span><span class="n">ifit</span><span class="p">,</span><span class="n">jfit</span><span class="p">)</span>

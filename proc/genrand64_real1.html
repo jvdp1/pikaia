@@ -10,7 +10,7 @@
     <meta name="author" content="Jacob Williams" >
     <link rel="icon" href="../favicon.png">
 
-    <title>genrep &ndash; Pikaia</title>
+    <title>genrand64_real1 &ndash; Pikaia</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
@@ -117,8 +117,8 @@
     
   
   <div class="row">
-    <h1>genrep
-      <small>Subroutine</small>
+    <h1>genrand64_real1
+      <small>Function</small>
     
     </h1>
     
@@ -136,24 +136,24 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title=" 1.8% of total for procedures.">14 statements</a>
+    title=" 0.6% of total for procedures.">5 statements</a>
      </li> 
      
      
      
-    <li><i class="fa fa-code"></i><a href="../src/pikaia_module.f90"> Source File</a></li>
+    <li><i class="fa fa-code"></i><a href="../src/mt19937-64.f90"> Source File</a></li>
      
      
   </ul>
   <ol class="breadcrumb in-well text-right">
   
     
-     <li><a href='../sourcefile/pikaia_module.f90.html'>pikaia_module.f90</a></li>
+     <li><a href='../sourcefile/mt19937-64.f90.html'>mt19937-64.f90</a></li>
     
-     <li><a href='../module/pikaia_module.html'>pikaia_module</a></li>
+     <li><a href='../module/mt19937_64.html'>mt19937_64</a></li>
     
   
-     <li class="active">genrep</li>
+     <li class="active">genrand64_real1</li>
   </ol>
 </div>
 </div>
@@ -197,7 +197,7 @@
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
-    <a class="list-group-item" href="../proc/genrep.html#src">genrep</a>
+    <a class="list-group-item" href="../proc/genrand64_real1.html#src">genrand64_real1</a>
   </div>
 </div>
 
@@ -209,7 +209,7 @@
     
     <div class="col-md-9" id='text'>
     <h2>
-private subroutine genrep(me, ip, ph, newph)
+private function genrand64_real1(me)
     
     
    
@@ -219,8 +219,7 @@ private subroutine genrep(me, ip, ph, newph)
 
 
     
-    <p>Full generational replacement: accumulate offspring into new
-  population array</p>
+    <p>Generates a random number on [0,1]-real-interval</p>
     
 
     <h3>Arguments</h3>
@@ -241,7 +240,7 @@ private subroutine genrep(me, ip, ph, newph)
   
 <tr>
   
-  <td><span class="anchor" id="variable-me~17"></span>class(<a href='../type/pikaia_class.html'>pikaia_class</a>),</td>
+  <td><span class="anchor" id="variable-me~21"></span>class(<a href='../type/mt19937.html'>mt19937</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
@@ -250,54 +249,18 @@ private subroutine genrep(me, ip, ph, newph)
   
 </tr>
 
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-ip"></span>integer,</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
-  <td><strong>ip</strong></td><td></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-ph~3"></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(me%n,2)</td><td>::</td>
-  <td><strong>ph</strong></td><td></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-newph"></span>real(kind=wp),</td>
-  <td>intent(out),</td>
-  <td></td>
-  
-  <td>dimension(me%n,me%np)</td><td>::</td>
-  <td><strong>newph</strong></td><td></td>
-  
-</tr>
-
 </tbody>
 </table>
 
+    
+    
+    
+    
+    
+    
+    
+   <h3>Return Value <small><span class="anchor" id="variable-genrand64_real1~2"></span>real(kind=r8)
+  </small></h3>
     
     
     
@@ -333,7 +296,7 @@ private subroutine genrep(me, ip, ph, newph)
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
-    <a class="list-group-item" href="../proc/genrep.html#src">genrep</a>
+    <a class="list-group-item" href="../proc/genrand64_real1.html#src">genrand64_real1</a>
   </div>
 </div>
 
@@ -362,26 +325,14 @@ private subroutine genrep(me, ip, ph, newph)
     
     <section>
     <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span>    <span class="k">subroutine </span><span class="n">genrep</span><span class="p">(</span><span class="n">me</span><span class="p">,</span><span class="n">ip</span><span class="p">,</span><span class="n">ph</span><span class="p">,</span><span class="n">newph</span><span class="p">)</span>
-
+    <div class="highlight"><pre><span></span>  <span class="kt">real</span><span class="p">(</span><span class="n">r8</span><span class="p">)</span> <span class="k">function </span><span class="n">genrand64_real1</span><span class="p">(</span><span class="n">me</span><span class="p">)</span>
+    <span class="c">!! Generates a random number on [0,1]-real-interval</span>
     <span class="k">implicit none</span>
+<span class="k">    class</span><span class="p">(</span><span class="n">mt19937</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span> <span class="kd">::</span> <span class="n">me</span>
 
-<span class="k">    class</span><span class="p">(</span><span class="n">pikaia_class</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span>          <span class="kd">::</span> <span class="n">me</span>
-    <span class="kt">integer</span><span class="p">,</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>                         <span class="kd">::</span> <span class="n">ip</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">me</span><span class="p">%</span><span class="n">n</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span>      <span class="kd">::</span> <span class="n">ph</span>
-    <span class="kt">real</span><span class="p">(</span><span class="n">wp</span><span class="p">),</span><span class="k">dimension</span><span class="p">(</span><span class="n">me</span><span class="p">%</span><span class="n">n</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">np</span><span class="p">),</span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="kd">::</span> <span class="n">newph</span>
+    <span class="n">genrand64_real1</span> <span class="o">=</span> <span class="kt">real</span><span class="p">(</span><span class="nb">ishft</span><span class="p">(</span><span class="n">me</span><span class="p">%</span><span class="n">genrand64_int64</span><span class="p">(),</span> <span class="o">-</span><span class="mi">11</span><span class="p">),</span> <span class="nb">kind</span><span class="o">=</span><span class="n">r8</span><span class="p">)</span> <span class="o">*</span> <span class="n">pi253_1</span>
 
-    <span class="kt">integer</span> <span class="kd">::</span> <span class="n">i1</span><span class="p">,</span><span class="n">i2</span><span class="p">,</span><span class="n">k</span>
-
-    <span class="c">!Insert one offspring pair into new population</span>
-    <span class="n">i1</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">ip</span><span class="o">-</span><span class="mi">1</span>
-    <span class="n">i2</span><span class="o">=</span><span class="n">i1</span><span class="o">+</span><span class="mi">1</span>
-    <span class="k">do </span><span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">me</span><span class="p">%</span><span class="n">n</span>
-        <span class="n">newph</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">i1</span><span class="p">)</span><span class="o">=</span><span class="n">ph</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">newph</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">i2</span><span class="p">)</span><span class="o">=</span><span class="n">ph</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-    <span class="k">end do</span>
-
-<span class="k">    end subroutine </span><span class="n">genrep</span>
+  <span class="k">end function </span><span class="n">genrand64_real1</span>
 </pre></div>
 
     </section>
