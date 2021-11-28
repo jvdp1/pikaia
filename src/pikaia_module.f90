@@ -806,6 +806,7 @@
             cycle
         end if
 
+        if (s<=0) exit
         l = stackl(s)
         r = stackr(s)
 
